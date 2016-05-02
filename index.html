@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Acceso Latino</title>
+	<meta name="author" content="CTIN" />
+	<meta name="description" content="Landing page de Acceso Latino, donde se dará asesoría sobre la ciudadanía y el registro para votar." />
+	<meta name="keywords"  content="Latino,Voto,Ciudadanía, CTIN, Fundación Carlos Slim" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<style>
+
+
+		.intro p{
+			/*width: 50%;*/
+			margin: 0 auto;
+			font-size: 1.1em;
+		}
+
+		#header{
+			top:0px;
+			background: red;
+		}
+		#footer{
+			bottom:0px;
+		}
+	</style>
+
+	<!--SCRIPTS-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#3FBFAD', '#8A54AE', 'whitesmoke', '#D49000', '#B10058'],
+				anchors: ['Ciudadania', 'Beneficios', 'Tramite', 'Registrate', 'Ayuda'],
+				menu: '#menu',
+				scrollingSpeed: 1000,
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['Ciudadanía', 'Beneficios', 'Tramite', 'Registrate', 'Ayuda'],
+				scrollOverflow: true
+			});
+
+		});
+	</script>
+
+</head>
+
+<body>
+<div id="header">
+<div class="hidden-sm hidden-xs">
+	<ul id="menu" class="medium">
+	<img src="img/ytuya.png" class="img-responsive" style="float: left;" alt="LOGO">
+		<span class="menupadding">
+			<li data-menuanchor="Ciudadanía"><a href="#Ciudadania"><b>Ciudadanía</b></a></li>
+			<li data-menuanchor="Beneficios"><a href="#Beneficios"><b>Beneficios</b></a></li>
+			<li data-menuanchor="Tramite"><a href="#Tramite"><b>Trámite</b></a></li>
+			<li data-menuanchor="Registrate"><a href="#Registrate"><b>Regístrate y vota</b></a></li>
+			<li data-menuanchor="Ayuda"><a href="#Ayuda"><b>Aquí te ayudamos</b></a></li>
+		</span>
+	</ul>
+	</div>
+</div>
+
+
+
+<div id="fullpage">
+
+	<!--Seccion: Ciudadanía-->
+	<div class="section " id="section0">
+		<div class="visible-sm visible-md visible-lg"><img src="img/ciudadano.png" class="img-responsive alignimg" alt="ciudadano"></div>
+		<div class="hidden-sm hidden-md hidden-lg"><img src="img/ciudadano_sm.png" class="img-responsive alignimg" alt="voto"></div>
+		<h1 class="texto">Y tú, ¿ya te hiciste<br><span style="font-weight: bolder;">ciudadano</span>?</h1>
+		<p class="texto" id="texto">3.9 millones de Hispanos cumplen<br>con los requisitos para ser ciudadanos<br>¡y pueden hacerlo!</p>
+	</div>
+
+	<!--Seccion: BENEFICIOS-->
+	<div class="section" id="section1">
+		<div class="intro">
+			<div class="container">
+				<h1 class="texto" id="">Hacerte ciudadano trae<br>grandes <span><strong>beneficios</strong></span>.</h1>
+				<!--Primera fila-->
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+					 <div class="clearfix visible-xs"></div>
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="">
+						    <h4 id="beneficios">La ciudadanía es <strong>permanente.</strong></h4>
+						  </div>
+						</div>
+					</div>								
+				</div>
+				<!-- Segunda Fila-->
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 ">
+					 <div class="clearfix visible-xs"></div>
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+						  	<span class="tab1"><img src="img/ben_deportado.png" class="img-responsive" alt="Deportado"></span>
+						    <p id="beneficios">Los ciudadanos <strong>NO</strong>pueden ser deportados</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 ">
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/ben_residencia.png" class="img-responsive" alt="Residencia"></span>
+						    <p id="beneficios">Pedir la <strong>residencia permanente</strong> para familiares directos.</p>
+						  </div>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-4">
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/ben_trabajo.png" class="img-responsive" alt="Trabajo"></span>
+						    <p id="beneficios">Pueden acceder a <strong>mejores trabajos</strong>.</p>
+						  </div>
+						</div>
+					</div>									
+				</div>
+				<!--Tercera Fila-->
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 ">
+					 <div class="clearfix visible-xs"></div>
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+						  	<span class="tab1"><img src="img/ben_voto.png" class="img-responsive" alt="Voto"></span>
+						    <p id="beneficios"><strong>Votar y competir</strong>en elecciones populares.</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 ">
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/ben_impuestos.png" class="img-responsive" alt="Impuestos"></span>
+						    <p id="beneficios">Deducir <strong>impuestos estatales</strong>.</p>
+						  </div>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-4">
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/ben_fuera.png" class="img-responsive" alt="País"></span>
+						    <p id="beneficios">Vivir <strong>fuera del país</strong> por el tiempo que desees.</p>
+						  </div>
+						</div>
+					</div>									
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!--Sección: INFOGRAFIA-->
+	<div class="section" id="section2">
+		<div class="intro">
+			<a href="docs/centrado.pdf" download>
+			<img src="img/infografia.png" class="img-responsive infografia container" alt=" DescargaLatino">
+			</a>				
+		</div>
+	</div>
+	<!--Sección: VOTO-->
+	<div class="section " id="section3">
+		<div class="visible-sm visible-md visible-lg"><img src="img/voto.png" class="img-responsive alignimg" alt="voto"></div>
+		<div class="hidden-sm hidden-md hidden-lg"><img src="img/voto_sm.png" class="img-responsive alignimg" alt="voto"></div>
+		<h1 class="texto">Y tú, ¿ya te registraste<br><span style="font-weight: bolder;">para votar</span>?</h1>
+		<p class="texto" id="texto">27.3 millones de Hispanos ya son<br>ciudadanos y podrán registrarse<br>para votar en las elecciones del 8 de<br>noviembre.</p>
+	</div>
+
+	<!--Sección: AYUDA-->
+	<div class="section" id="section4" onscroll="myFunction()">
+		<div class="intro">
+			<div class="container">
+				<div class="visible-sm visible-md visible-lg"><img src="img/signo.png" class="img-responsive alignimg" alt="Ayuda"></div>
+				<div class="hidden-sm hidden-md hidden-lg"><img src="img/signo_sm.png" class="img-responsive alignimg" alt="Ayuda"></div>
+				<h1 class="texto" id="ayuda">¿Aún tienes<span style="font-weight: bolder;"> dudas</span>?</h1>
+				<div class="row">
+					<h2 class="texto">Ya es hora ¡ciudadanía!: (888)839-8682</h2>
+					<br>
+				</div>	
+				<!-- Primera fila-->
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 ">
+					<a href="http://accesolatino.org/">
+					 <div class="clearfix visible-xs"></div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Acceso Latino</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+						  	<span class="tab1"><img src="img/duda_latino.png" class="img-responsive" alt="Latino"></span>
+						    <p>Conoce paso a paso el proceso. Encuentra herramientas para tu examen y entrevista.</p>
+						  </div>
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 ">
+					<a href="https://www.uscis.gov/es">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">USCIS</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/duda_uscis.png" class="img-responsive" alt="USCIS"></span>
+						    <p>Conoce la información oficial sobre la naturalización.</p>
+						  </div>
+						</div>
+						</a>
+					</div>	
+					<div class="col-xs-12 col-sm-4">
+					<a href="https://www.citizenshipworks.org/">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Citizenship works</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/duda_citizen.png" class="img-responsive" alt="Citizenship"></span>
+						    <p>Aplica para la ciudadanía. Llena tu solicitud.</p>
+						  </div>
+						</div>
+						</a>
+					</div>									
+				</div>
+				<!-- Segunda fila-->
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 ">
+					<a href="http://ciudadania.yaeshora.info/hazte">
+					 <div class="clearfix visible-xs"></div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Ya es hora ¡ciudadanía!</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+						  	<span class="tab1"><img src="img/duda_ciudadania.png" class="img-responsive" alt="Latino"></span>
+						    <p>Linea telefónica para atender todas tus dudas sobre la ciudadanía.</p>
+						  </div>
+						</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 ">
+					<a href="http://www.nclr.org/">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">NCLR</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/duda_nclr.png" class="img-responsive" alt="Latino"></span>
+						    <p>Regístrate para votar. Recursos para votantes.</p>
+						  </div>
+						</div>
+						</a>
+					</div>	
+					<div class="col-xs-12 col-sm-4">
+						<a href="http://veyvota.yaeshora.info/">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Ya es hora ¡ve y vota!</h3>
+						  </div>
+						  <div class="panel-body" id="panel-ayuda">
+							<span class="tab1"><img src="img/duda_veyvota.png" class="img-responsive" alt="Latino"></span>
+						    <p>Linea telefónica para atender tus dudas sobre el registro para votar y el proceso electoral.</p>
+						  </div>
+						</div></a>
+					</div>									
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

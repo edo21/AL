@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'GeomanistFont';
+    src: url('../fonts/geomanist_regular.otf');
+}
+
+@font-face {
+    font-family: 'GeomanistFont';
+    src: url('../fonts/geomanist_bold.otf');
+    font-weight: bold;
+}
+
+ul.medium{
+	font-family: 'GeomanistFont';
+	font-size: 18px;
+}
+
+h3{
+	font-family: 'GeomanistFont'
+}
+
+div{
+	font-family: 'GeomanistFont'
+}
+
+
+.panel-default{
+    border-color: #b10058;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: inherit;
+}
+
+.panel-default > .panel-heading {
+  color: #fff;
+  background-color: #cf3e89;
+  border-color: #cf3e89;
+}
+
+.panel-body{
+	text-align: -moz-left;
+}
+
+.tab{
+	float: left;
+    margin-right: 1em;
+    width:100px ;
+    height: auto;
+}
+
+.tab1{
+    float: left;
+    margin-right: 1em;
+    max-width:70px;
+    height: auto;
+}
+
+.padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menupadding{
+    margin-left: 10%;
+}
+
+
+.container {
+  padding-right: 52px;
+  padding-left: 52px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+}
+
+.texto{
+    font-family: 'GeomanistFont';
+    color: white;
+}
+
+.menupadding{
+    margin-left: 10%;
+}
+
+.alignimg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infografia{
+    max-height: auto;
+    max-width: 940px;
+}
+
+#ayuda{
+    margin-top: 0px;
+}
+
+#beneficios{
+    color: #844CAA; 
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+.panel-primary{
+    border-color: #8A54AE;
+}
+
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #cf3e89;
+  border-color: #cf3e89;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:active,
+a:hover
+ {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.03em;
+}
+
+ a:visited {
+    text-decoration: none;
+  }
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+@media screen and (min-width: 940px) {
+    #panel-ayuda {
+        min-height: 120px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 940px) {
+    #panel-ayuda {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    #texto{
+        font-size: 16px;
+    }
+}
