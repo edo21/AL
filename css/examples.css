@@ -204,3 +204,14 @@ p{
 	z-index: 999;
  }
 
+.intro p{
+	margin: 0 auto;
+	font-size: 1.1em;
+}
+#header{
+	top:0px;
+	background: red;
+}
+#footer{
+	bottom:0px;
+}

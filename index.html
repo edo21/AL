@@ -15,29 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-
-	<style>
-
-
-		.intro p{
-			/*width: 50%;*/
-			margin: 0 auto;
-			font-size: 1.1em;
-		}
-
-		#header{
-			top:0px;
-			background: red;
-		}
-		#footer{
-			bottom:0px;
-		}
-	</style>
-
 	<!--SCRIPTS-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
@@ -60,7 +40,7 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
 <div id="header">
 <div class="hidden-sm hidden-xs">
 	<ul id="menu" class="medium">
@@ -78,7 +58,7 @@
 
 
 
-<div id="fullpage">
+<div id="fullpage" >
 
 	<!--Seccion: Ciudadanía-->
 	<div class="section " id="section0">
@@ -101,7 +81,7 @@
 						  <div class="panel-heading">
 						  </div>
 						  <div class="panel-body" id="">
-						    <h4 id="beneficios">La ciudadanía es <strong>permanente.</strong></h4>
+						    <h4 id="beneficios1">La ciudadanía es <strong>permanente.</strong></h4>
 						  </div>
 						</div>
 					</div>								
@@ -115,7 +95,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 						  	<span class="tab1"><img src="img/ben_deportado.png" class="img-responsive" alt="Deportado"></span>
-						    <p id="beneficios">Los ciudadanos <strong>NO</strong>pueden ser deportados</p>
+						    <p id="beneficios1">Los ciudadanos <strong>NO</strong>pueden ser deportados</p>
 						  </div>
 						</div>
 					</div>
@@ -125,7 +105,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 							<span class="tab1"><img src="img/ben_residencia.png" class="img-responsive" alt="Residencia"></span>
-						    <p id="beneficios">Pedir la <strong>residencia permanente</strong> para familiares directos.</p>
+						    <p id="beneficios1">Pedir la <strong>residencia permanente</strong> para familiares directos.</p>
 						  </div>
 						</div>
 					</div>	
@@ -135,7 +115,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 							<span class="tab1"><img src="img/ben_trabajo.png" class="img-responsive" alt="Trabajo"></span>
-						    <p id="beneficios">Pueden acceder a <strong>mejores trabajos</strong>.</p>
+						    <p id="beneficios1">Pueden acceder a <strong>mejores trabajos</strong>.</p>
 						  </div>
 						</div>
 					</div>									
@@ -149,7 +129,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 						  	<span class="tab1"><img src="img/ben_voto.png" class="img-responsive" alt="Voto"></span>
-						    <p id="beneficios"><strong>Votar y competir</strong>en elecciones populares.</p>
+						    <p id="beneficios1"><strong>Votar y competir</strong>en elecciones populares.</p>
 						  </div>
 						</div>
 					</div>
@@ -159,7 +139,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 							<span class="tab1"><img src="img/ben_impuestos.png" class="img-responsive" alt="Impuestos"></span>
-						    <p id="beneficios">Deducir <strong>impuestos estatales</strong>.</p>
+						    <p id="beneficios1">Deducir <strong>impuestos estatales</strong>.</p>
 						  </div>
 						</div>
 					</div>	
@@ -169,7 +149,7 @@
 						  </div>
 						  <div class="panel-body" id="panel-ayuda">
 							<span class="tab1"><img src="img/ben_fuera.png" class="img-responsive" alt="País"></span>
-						    <p id="beneficios">Vivir <strong>fuera del país</strong> por el tiempo que desees.</p>
+						    <p id="beneficios1">Vivir <strong>fuera del país</strong> por el tiempo que desees.</p>
 						  </div>
 						</div>
 					</div>									
@@ -195,12 +175,12 @@
 	</div>
 
 	<!--Sección: AYUDA-->
-	<div class="section" id="section4" onscroll="myFunction()">
+	<div class="section" id="section4">
 		<div class="intro">
 			<div class="container">
-				<div class="visible-sm visible-md visible-lg"><img src="img/signo.png" class="img-responsive alignimg" alt="Ayuda"></div>
-				<div class="hidden-sm hidden-md hidden-lg"><img src="img/signo_sm.png" class="img-responsive alignimg" alt="Ayuda"></div>
-				<h1 class="texto" id="ayuda">¿Aún tienes<span style="font-weight: bolder;"> dudas</span>?</h1>
+				<div class="visible-sm visible-md visible-lg"><img src="img/signo.png" class="img-responsive alignimg" id="interrogacion" alt="Help"></div>
+				<div class="hidden-sm hidden-md hidden-lg"><img src="img/signo_sm.png" class="img-responsive alignimg" id="interrogacion" alt="Help"></div>
+				<h1 class="texto" id="ayuda1">¿Aún tienes<span style="font-weight: bolder;"> dudas</span>?</h1>
 				<div class="row">
 					<h2 class="texto">Ya es hora ¡ciudadanía!: (888)839-8682</h2>
 					<br>
@@ -294,6 +274,20 @@
 		</div>
 	</div>
 </div>
+
+<script>
+function myFunction() {
+	var elmnt = document.getElementById("section4");
+    var y = elmnt.scrollHeight;
+    console.log(y);
+    if (y > 692) {
+    	document.getElementById("interrogacion").style.display="none";
+    	alert("se supone que ya desaparecio");
+    }
+
+}
+
+</script>
 
 </body>
 </html>
